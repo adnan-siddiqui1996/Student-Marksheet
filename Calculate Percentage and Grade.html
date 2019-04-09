@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marksheet</title>
+</head>
+<script type="text/javascript">
+	
+	var name = prompt("Student Name:");
+	var eng = prompt ("Enter English Marks:");
+	var sci = prompt ("Enter Science Marks:");
+	var maths = prompt ("Enter Mathematics Marks:");
+	var comp = prompt ("Enter Computer Marks:");
+	var urdu = prompt ("Enter Urdu Marks:");
+	var total = 500;
+	var remark;
+	var obtained = ( parseInt(eng) + parseInt(sci) + parseInt(maths) + parseInt(comp) + parseInt(urdu) );
+	var percentage = (parseInt(obtained)*100)/total;
+	if (percentage > 100){alert(remark = "Invalid Input");}
+	else if(percentage <= 100 && percentage >= 80){alert(remark = "Congatulations! You have got A+ Grade");}
+	else if(percentage < 80 && percentage >= 70){alert(remark = "Congatulations! You have got A Grade");}
+	else if(percentage < 70 && percentage >= 60){alert(remark = "Congatulations! You have got B Grade");}
+	else if(percentage < 60 && percentage >= 50){alert(remark = "Congatulations! You have got C Grade");}
+	else if(percentage < 50 && percentage >= 40){alert(remark = "Congatulations! You have got D Grade");}
+	else if(percentage < 40 && percentage > 0){alert(remark = "Sad! You have got Failed");}
+	else if(percentage <= 0){alert(remark = "Invalid Input");}
+
+	document.write("<b><u>" + name + "</u></b>");
+	document.write("<br><br><br>English = " + eng);
+	document.write("<br>Science = " + sci);
+	document.write("<br>Mathematics = " + maths);
+	document.write("<br>Computer = " + comp);
+	document.write("<br>Urdu = " + urdu);
+	document.write("<br>Total Marks = " + total);
+	document.write("<br>Obtained Marks = " + obtained);
+	document.write("<br>Your Percentage = " + percentage + "%");
+	document.write("<br>" + remark);
+
+</script>
+<style type="text/css">
+	
+	body{
+		font-family: verdana;
+		font-size: 22pt;
+		text-align: center;
+	}
+
+</style>
+<body>
+
+</body>
+</html>
